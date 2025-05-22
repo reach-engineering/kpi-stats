@@ -2,7 +2,8 @@ import type { NextConfig } from 'next'
 
 const nextConfig: NextConfig = {
   output: 'export',
-  basePath: "/kpi-stats",
+  basePath: '/kpi-stats',
+  assetPrefix: '/kpi-stats',
   images: {
     unoptimized: true
   },
