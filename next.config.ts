@@ -1,9 +1,9 @@
 import type { NextConfig } from 'next'
 
 const nextConfig: NextConfig = {
-  output: 'standalone',
-  // basePath: '/kpi-stats',
-  // assetPrefix: '/kpi-stats',
+  output: 'export',
+  basePath: '/kpi-stats',
+  assetPrefix: '/kpi-stats',
   images: {
     unoptimized: true
   },
