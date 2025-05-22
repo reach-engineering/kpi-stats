@@ -1,7 +1,7 @@
 import type { NextConfig } from 'next'
 
 const nextConfig: NextConfig = {
-  output: 'standalone',
+  output: 'export',
   // basePath: '/kpi-stats',
   // assetPrefix: '/kpi-stats',
   images: {

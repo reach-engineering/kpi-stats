@@ -1,11 +1,8 @@
 import type { Metadata } from 'next'
 import './globals.css'
 
-import { VisualEditing } from 'next-sanity'
 import { Inter } from 'next/font/google'
-import { draftMode } from 'next/headers'
 
-import { SanityLive } from '@/sanity/lib/live'
 import Footer from '@/sections/Footer'
 
 const inter = Inter({
@@ -27,20 +24,9 @@ export default async function RootLayout({
 }: Readonly<{
   children: React.ReactNode
 }>) {
-  const { isEnabled: isDraftMode } = await draftMode()
-
   return (
     <html lang="en">
       <body className={inter.variable}>
-        {isDraftMode && (
-          <>
-            {/* Enable Visual Editing, only to be rendered when Draft Mode is enabled   */}
-            <VisualEditing />
-          </>
-        )}
-
-        {/* The <SanityLive> component is responsible for making all sanityFetch calls in your application live, so should always be rendered. */}
-        <SanityLive />
         {/* TODO: Create Header */}
         {/* <Header/> */}
         <main>{children}</main>
