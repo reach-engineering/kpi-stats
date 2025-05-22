@@ -11,12 +11,12 @@ function assertValue<T>(v: T | undefined, errorMessage: string): T {
 export const useCdn = false
 
 export const projectId = assertValue(
-  process.env.NEXT_PUBLIC_SANITY_PROJECT_ID ?? 'testing',
+  process.env.NEXT_PUBLIC_SANITY_PROJECT_ID ?? 'UPDATE-THIS',
   'Missing environment variable: NEXT_PUBLIC_SANITY_PROJECT_ID'
 )
 
 export const dataset = assertValue(
-  process.env.NEXT_PUBLIC_SANITY_DATASET ?? 'testing',
+  process.env.NEXT_PUBLIC_SANITY_DATASET ?? 'UPDATE-THIS',
   'Missing environment variable: NEXT_PUBLIC_SANITY_DATASET'
 )
 export const studioEnvironment = (process.env.NEXT_PUBLIC_SANITY_ENVIRONMENT ||
