@@ -34,7 +34,7 @@ export default async function RootLayout({
       <body className={inter.variable}>
         {isDraftMode && (
           <>
-            {/*  Enable Visual Editing, only to be rendered when Draft Mode is enabled */}
+            {/* Enable Visual Editing, only to be rendered when Draft Mode is enabled   */}
             <VisualEditing />
           </>
         )}
